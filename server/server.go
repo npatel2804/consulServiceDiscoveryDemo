@@ -6,7 +6,7 @@ import (
 	"net"
 
 	api "github.com/hashicorp/consul/api"
-	pb "github.com/supermario2804/ConsulServiceDiscoveryDemo/server/protos"
+	pb "github.com/npatel2804/consulServiceDiscoveryDemo/server/protos"
 	gRPC "google.golang.org/grpc"
 )
 
