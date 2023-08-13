@@ -1,0 +1,17 @@
+syntax = "proto3";
+package calculator;
+option go_package="protos";
+
+message FunctionRequest {
+  int32 num1 = 1;
+  int32 num2 = 2;
+}
+
+message FunctionResponse {
+  int32 result = 1;
+}
+
+service Calculator {
+  rpc SubNum(FunctionRequest) returns (FunctionResponse) {};
+  rpc SumNum(FunctionRequest) returns (FunctionResponse) {};
+}
